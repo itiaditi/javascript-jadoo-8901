@@ -1,0 +1,46 @@
+ 
+#btn {
+    background-color: white;
+    margin: auto;
+    height: 100px;
+    width: 40px;
+    opacity: 0.5;
+    color: rgb(0, 12, 0);
+  }
+  
+  .carousel-control-next-icon {
+    margin: -45%;
+  }
+  .fa-solid {
+    font-size: 30px;
+    opacity: 1;
+  }
+  .fa-solid:hover {
+    font-size: 30px;
+    color: rgb(0, 255, 21);
+    opacity: 0;
+  }
+  .first-img > img {
+    width: 100%;
+  }
+  #btn1 {
+    background-color: white;
+    margin: auto;
+    height: 100px;
+    width: 40px;
+    opacity: 0.5;
+    color: rgb(0, 12, 0);
+  }
+  
+  .carousel-control-prev-icon {
+    margin: -40%;
+  }
+  .fa-solid {
+    font-size: 30px;
+    opacity: 1;
+  }
+  .fa-solid:hover {
+    font-size: 30px;
+    color: rgb(0, 255, 21);
+    opacity: 0.5;
+  }
