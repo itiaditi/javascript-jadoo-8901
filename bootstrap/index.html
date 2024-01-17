@@ -3,7 +3,356 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Reliance World</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      /*carousel with cards*/
+      .parent {
+        background-color: #f9f9f9;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 2;
+      }
+      span.material-symbols-outlined {
+        color: black;
+        background-color: white;
+        width: 20px;
+        height: 63px;
+        display: grid;
+        align-items: center;
+        margin: auto;
+        padding: 3px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .carousel-inner {
+        display: flex;
+        padding: 1em;
+      }
+      .carousel-item {
+        display: block;
+        flex: 0 0 calc(100% / 5);
+        margin: 0;
+      }
+      .card {
+        margin: 0.5em;
+      }
+      .heading h2 {
+        color: #333;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 0.7em;
+        margin: 0;
+        padding: 0 10px 2px 0;
+      }
+      .heading {
+        margin-bottom: 24px;
+      }
+      .heading a {
+        border-radius: 2px;
+      }
+      #carousel-Example {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+      .heading {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        width: 98%;
+        margin-bottom: 24px;
+        a {
+          text-decoration: none;
+          background-color: blue;
+          font-size: 15px;
+          color: white;
+          div {
+            background: rgb(0, 51, 128);
+            border: 1px solid rgb(0, 51, 128);
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 12px;
+          }
+        }
+      }
+      .container-fluid {
+        margin: 0;
+        background: rgb(249, 249, 249);
+      }
+
+      div#carouselExample {
+        background-color: white;
+      }
+      .image-hover {
+        transition: transform 3s ease-in-out;
+      }
+      .image-hover > img:hover {
+        transform: scale(1.5);
+      }
+
+      div#carouselExample {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+      }
+
+      button.carousel-control-prev,
+      button.carousel-control-next {
+        width: 2%;
+      }
+      .carousel-item {
+        margin: 2px;
+      }
+
+      .carousel-inner {
+        width: 95%;
+        padding: 15px;
+        margin: auto;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container-fluid">
+      <div class="heading">
+        <h2 class="image-hover">Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+      <div
+        id="carouselExample"
+        class=".bg-light-subtle carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="card-wrapper container-sm d-flex justify-content-around"
+            >
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img
+                  src="https://source.unsplash.com/collection/190727/1600x900"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+        <span class="visually-hidden">Previous</span>
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>-->
+      </div>
+    </div>
+  </body>
 </html>
