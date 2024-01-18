@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--
+      lead
+    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!---->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <style>
+<<<<<<< HEAD
       #uppercard{
           width:auto;
           height: 500px;
@@ -108,21 +139,76 @@
            
            
             
+=======
+      #uppercard {
+        width: auto;
+        height: 500px;
+        border: 2px solid black;
+      }
+      #main {
+        width: auto;
+        height: 400px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+      }
+      #head {
+      }
+      #cards {
+        display: flex;
+        margin: 50px;
+        margin-left: 120px;
+        width: 1400px;
+        height: 300px;
+        img {
+          width: 200px;
+          height: 200px;
+>>>>>>> 14d0e7ac9a2d52d81b00904b379d08b1d5b78647
         }
+      }
+      button {
+        width: auto;
+        height: 100%;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 35px;
+        height: 85px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        cursor: pointer;
+        margin-top: 170px;
+        margin-left: 40px;
+        margin-right: 40px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+      }
 
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
+<<<<<<< HEAD
          /* width: 30px;
          height: 20px; */
         
        
        }
+=======
+        width: 30px;
+        height: 20px;
+      }
+>>>>>>> 14d0e7ac9a2d52d81b00904b379d08b1d5b78647
 
-       .carousel-control-next, .carousel-control-prev{
+      .carousel-control-next,
+      .carousel-control-prev {
         opacity: 2;
-       }
+      }
       .carousel-control-prev:focus,
       .carousel-control-next:focus {
+<<<<<<< HEAD
            outline: none;
            box-shadow: none;
    
@@ -425,7 +511,508 @@
    </div>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+=======
+        outline: none;
+        box-shadow: none;
+      }
+      .card {
+        border: none;
+      }
+      .material-symbols-outlined {
+        color: black;
+      }
+      /*-----------------------------------------------------------*/
+      /*Lead*/
 
+      /*header*/
+      .image > img {
+        transition: transform 0.5s ease-in;
+      }
+      .card :hover {
+        color: red;
+        .image > img {
+          transition: transform 0.5s ease-in;
+        }
+      }
+      .image > img:hover {
+        color: red;
+        transform: scale(1.1);
+        overflow-y: hidden;
+        cursor: pointer;
+      }
+      .container-fluid {
+        padding: 10px;
+      }
+      .card-slider {
+        width: 90%;
+        margin: auto;
+      }
+      .heading {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        width: 98%;
+        margin-bottom: 24px;
+        a {
+          text-decoration: none;
+          background-color: blue;
+          font-size: 15px;
+          color: white;
+          div {
+            background: rgb(0, 51, 128);
+            border: 1px solid rgb(0, 51, 128);
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 4px 12px;
+          }
+        }
+      }
+      button {
+        /* padding: 80px; */
+        margin: auto;
+        height: 90px;
+        width: 3%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+        opacity: 2;
+      }
+      div#carouselExampleControls {
+        background-color: white;
+        padding: 10px;
+        width: 100%;
+      }
+      .card {
+        border-style: none;
+      }
 
-</body>
+      span.carousel-control-prev-icon,
+      span.carousel-control-next-icon {
+        background-color: black;
+        /* border: 2px solid blue; */
+        opacity: 2;
+        height: 79px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      button.carousel-control-prev,
+      button.carousel-control-next {
+        width: 2%;
+      }
+      .card:hover {
+        color: red;
+      }
+      .card {
+        margin: 10px;
+      }
+      .container-fluid {
+        margin: 0;
+        background: rgb(249, 249, 249);
+      }
+      .heading {
+        margin: auto;
+        margin-bottom: 24px;
+      }
+      .heading a {
+        border-radius: 2px;
+      }
+      .heading h2 {
+        color: #333;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 0.7em;
+        margin: 0;
+        padding: 0 10px 2px 0;
+      }
+      .parent {
+        background-color: #f9f9f9;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        opacity: 2;
+      }
+      .image > img {
+        transform-origin: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="uppercard">
+      <h5 id="head">Washing Machine Bestseller</h5>
+      <div id="main">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="cards">
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338668-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oNjAvaDBiLzEwMDk5NDg4MjYwMTI2LmpwZ3w1OGVmOWNhZmMzZWNjNzIxYjQwOGU3MTY1MDBmYzlmMDc2MTJiNDlmMjAxMjRhMGQ5YTNmZGNlNzQ2ZGYyODFh"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">
+                      TCL 7 Kg Top Loading Fully Automatic Washing Machine,
+                      F3070TLG Dark Grey
+                    </h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Samsung-WA70A4002GS-TL-Washing-Machine-492850943-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNTk0MXxpbWFnZS9qcGVnfGltYWdlcy9oMGMvaDJhLzk4NjI5MDMzOTg0MzAuanBnfGI2NzE4MGQwN2RmYjkxYjkyNzcyMjMzNzdiMThkZWExOTMzNjFkMWE4NmRiNGI3ZTcwMzJkNWE2ODc0YWI4NmM"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/492864821-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE5N3xpbWFnZS9qcGVnfGltYWdlcy9oMjIvaDRiLzEwMDU5MTE1MzY0MzgyLmpwZ3w0Y2ZlNmU1ZDg3MjZlNDVkZmNiNjE3ZWNmMWJmOWQ3NzQzODJhZTAwZjFiZGU4OThlM2JiZjY3ZWNjODE3MTVi"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Kelvinator-KWS-A750EP-Washing-Machine-491902898-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyOTIyMXxpbWFnZS9qcGVnfGltYWdlcy9oMGQvaDY1Lzk5MDk0NjExNTU4NzAuanBnfDRjZTMzMjdiMjIyZTk3NWQ3ODA1NGVkOTNkMjFjYmI5NjkwMTA4YTYzNjE0ZTc1Yzc3YWY1MjZmMzkyYTEwYWQ"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/491959428-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjYwMXxpbWFnZS9qcGVnfGltYWdlcy9oOGEvaGI0LzEwMDU5MTEyNDE1MjYyLmpwZ3w0NWYyZDRjOWYyODFmNTZkODI0YzQxOTQ4ZWNiNjMwMDUzYjIyNTcwMDE1ZWI2MWM3ZmNlM2JjOTEwYzliMmRj"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="cards">
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/491959428-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjYwMXxpbWFnZS9qcGVnfGltYWdlcy9oOGEvaGI0LzEwMDU5MTEyNDE1MjYyLmpwZ3w0NWYyZDRjOWYyODFmNTZkODI0YzQxOTQ4ZWNiNjMwMDUzYjIyNTcwMDE1ZWI2MWM3ZmNlM2JjOTEwYzliMmRj"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/TCL-WashingMachine-494338667-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTMzM3xpbWFnZS9qcGVnfGltYWdlcy9oN2UvaDhiLzEwMDk5NDg4NTg3ODA2LmpwZ3xlMGQwYzZhMWZlODllYTUwZjZkZjlmZGE2ZmNiMDJiMWFkYjgxNGU0YTRmODIwMDM1YzU5NTVhOTlmOGM3ODFl"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Kelvinator-KWT-A700LG-Washing-Machines-491604436-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjczMXxpbWFnZS9qcGVnfGltYWdlcy9oYmEvaDEwLzk5MDk0NzIzNjI1MjYuanBnfDM3MjhmNGU5ZWU3NjBjMTY5ZGQ5NzZlYTY3YzA2N2ZjZGM4MWZjN2YyZTQ5ZmYxN2M5YjU4MjJkYmE5ZWU2Nzc"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/LG-DHV09SWB-Washing-Machine-492572880-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTAxOHxpbWFnZS9qcGVnfGltYWdlcy9oY2YvaGU3Lzk4NDU5NTkxOTY3MDIuanBnfDE2NGQyNDk5MWU5ZmNkMTU3ODhkOGQ4N2VhY2EwZTFiYTQyZjIwMmQzMjZhNDg2Y2ExYmNmOGU5ZjZhZGRiNTY"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img
+                    src="https://www.reliancedigital.in/medias/493627304-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyNDczOHxpbWFnZS9qcGVnfGltYWdlcy9oNjcvaGZkLzEwMDU5MTE2MDE5NzQyLmpwZ3w5ODQ3YzkwYzVjZTRiODgzY2U0NDY5ODJkN2Q5MjQ2N2ZlYTA5MzMxNzY2ZDcwYjU4YzI4MjE0MTA4NGM3YTZk"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
+        <span class="visually-hidden" style="color: black">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- </div>
+</div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+>>>>>>> 14d0e7ac9a2d52d81b00904b379d08b1d5b78647
+
+    <!--carousel with cards (Aditi)-->
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>-->
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!---->
+  </body>
 </html>
