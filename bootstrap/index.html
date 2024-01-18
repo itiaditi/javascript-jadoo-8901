@@ -314,21 +314,27 @@
       /*Lead*/
 
       /*header*/
+      .text {
+        color: #083984;
+      }
+      .image + .text:hover {
+        cursor: pointer;
+        color: red;
+      }
       .image > img {
         transition: transform 0.5s ease-in;
       }
       .card :hover {
-        color: red;
+        cursor: pointer;
+        .text {
+          color: red;
+        }
+        /* color: red;*/
         .image > img {
           transition: transform 0.5s ease-in;
         }
       }
-      .image > img:hover {
-        color: red;
-        transform: scale(1.1);
-        overflow-y: hidden;
-        cursor: pointer;
-      }
+
       .container-fluid {
         padding: 10px;
       }
@@ -367,7 +373,12 @@
         margin-right: 10px;
         opacity: 2;
       }
-      div#carouselExampleControls {
+      div#carouselExampleControls1,
+      div#carouselExampleControls2,
+      div#carouselExampleControls3,
+      div#carouselExampleControls4,
+      div#carouselExampleControls5,
+      div#carouselExampleControls6 {
         background-color: white;
         padding: 10px;
         width: 100%;
@@ -384,13 +395,63 @@
         height: 79px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
+      /* .card-title{
+          display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2; 
+        }*/
+      .card {
+        padding: 0;
+        margin: 0;
+      }
+
+      .text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 20px;
+        /* Set the number of lines you want to display */
+        -webkit-line-clamp: 2;
+
+        /* Disable the generation of ellipsis */
+        text-overflow: unset;
+        /* margin: auto;
+        margin-top: 10px;
+        
+        font-size: 14px;
+        box-sizing: border-box;*/
+        width: 100%;
+        height: auto;
+        color: #003380;
+        height: 2.8em;
+        line-height: 1.4em;
+        margin-top: 20px;
+        margin-right: 20px;
+        overflow: hidden;
+      }
+
+      .image > img {
+        width: 85%;
+      }
+      .image {
+        display: grid;
+        place-items: center;
+      }
+
+      .card-body {
+        padding: 0;
+      }
 
       button.carousel-control-prev,
       button.carousel-control-next {
         width: 2%;
       }
       .card:hover {
-        color: red;
+        .text {
+          color: red;
+        }
       }
       .card {
         margin: 10px;
@@ -422,8 +483,33 @@
       .carousel-control-next {
         opacity: 2;
       }
+      .image > img:hover {
+        transform: scale(1.1);
+        overflow-y: hidden;
+        cursor: pointer;
+      }
+      .image > img {
+        transition: transform 0.5s ease-in;
+      }
       .image > img {
         transform-origin: top;
+      }
+      p {
+        font-size: 14px;
+        line-height: 0.2;
+      }
+      .discount {
+        text-align: center;
+        font-size: 14px;
+        width: 81%;
+      }
+      /*.discount {
+        display: none;
+      }*/
+      #carouselExampleControls1 > .card-wrapper:nth-child(1) {
+        .discount {
+          display: block;
+        }
       }
     </style>
   </head>
@@ -885,11 +971,7 @@
         <a href=""><div>View all</div></a>
       </div>
 
-      <div
-        id="carouselExampleControls"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
+      <div id="carouselExampleControls1" class="carousel carousel-dark slide">
         <div class="card-slider">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -897,58 +979,213 @@
                 class="card-wrapper container-sm d-flex justify-content-around"
               >
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                  <div
+                    style="
+                      display: none;
+                      background-color: #007fad;
+                      color: white;
+                      border-top-left-radius: 12px;
+                      border-bottom-right-radius: 12px;
                     "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                    class="discount"
+                  >
+                    ₹2000 Instant Discount
+                  </div>
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                  <div
+                    style="
+                      background-color: #007fad;
+                      color: white;
+                      border-top-left-radius: 12px;
+                      border-bottom-right-radius: 12px;
                     "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                    class="discount"
+                  >
+                    ₹2000 Instant Discount
+                  </div>
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                  <div
+                    style="
+                      background-color: #007fad;
+                      color: white;
+                      border-top-left-radius: 12px;
+                      border-bottom-right-radius: 12px;
                     "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                    class="discount"
+                  >
+                    ₹2000 Instant Discount
+                  </div>
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                  <div
+                    style="
+                      background-color: #007fad;
+                      color: white;
+                      border-top-left-radius: 12px;
+                      border-bottom-right-radius: 12px;
                     "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                    class="discount"
+                  >
+                    ₹2000 Instant Discount
+                  </div>
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
-                    "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
               </div>
@@ -967,29 +1204,93 @@
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
-                    "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
                     "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
@@ -1001,53 +1302,69 @@
                     />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
                 <div class="card" style="width: 18rem">
-                  <img
-                    src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
-                    class="card-img-top"
-                    alt="..."
-                  />
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h6 class="text card-title">
+                      Apple Watch SE GPS 44 mm Midnight Aluminium Case with
+                      Midnight Sport Band - M/L
+                    </h6>
+                    <p>Offer Price:31,999.00</p>
+                    <p>M.R.P: <strike>32,900.00</strike></p>
+                    <p>You Save: 3%(901)</p>
+                    <a
+                      style="
+                        text-decoration: none;
+                        font-size: 13px;
+                        padding: 4px;
+                        font-weight: 600;
+                        border-radius: 20px;
+                        color: #3c883a;
+                        border: 1px solid #3c883a;
+                        background-color: #effcf5;
+                      "
+                      href="#"
+                      >OFFERS AVAILABLE</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>-->
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carouselExampleControls1"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1057,7 +1374,876 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleControls"
+          data-bs-target="#carouselExampleControls1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div id="carouselExampleControls2" class="carousel carousel-dark slide">
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="text card-title">
+                      Apple Watch Series 9 GPS + Cellular 45mm Starlight
+                      Aluminium Case with Starlight Sport Loop
+                    </p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                    <h6>₹54,000.00</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div id="carouselExampleControls3" class="carousel carousel-dark slide">
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                    <h6>₹54,000.00</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls3"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls3"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div id="carouselExampleControls4" class="carousel carousel-dark slide">
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                    <h6>₹54,000.00</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls4"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls4"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div id="carouselExampleControls5" class="carousel carousel-dark slide">
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                    <h6>₹54,000.00</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls5"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls5"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="heading">
+        <h2>Best Selling SmartWatches</h2>
+        <a href=""><div>View all</div></a>
+      </div>
+
+      <div id="carouselExampleControls6" class="carousel carousel-dark slide">
+        <div class="card-slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Noise-Voyage-Smart-Watch-Jet-Black-494351756-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0NDE1OXxpbWFnZS9qcGVnfGltYWdlcy9oMTUvaGExLzEwMDkzNzQwNTIzNTUwLmpwZ3w5MjM5Yzc0M2QyMzAwNmMzODQ2MmNiNjYzOTA5ZWFkOTlhNDhhNDBhMzNmZjJhMGFhMDRlOTVhODY0NDJmNjJj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                    <h6>₹54,000.00</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Indigo-Alpine-Loop-494226908-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2OTk5OXxpbWFnZS9qcGVnfGltYWdlcy9oMjkvaDgxLzEwMDUwNjI3NjY1OTUwLmpwZ3wzMzM1ODk3M2I1OWY3YWU2MzkyYzkyZjMyMTNmMzY4YWJjODBhZWI4MWY5M2I1MjA0YWUwNDZhOWE3ZTIxZjhj
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Samsung-R895N-Smartwatch-493665201-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMzM0N3xpbWFnZS9qcGVnfGltYWdlcy9oNTMvaDUzLzk5NjQ5MzE5MDc2MTQuanBnfDMyMTgwZGVjNmU1MmFlM2M2ZmMxYjE3MzZjYzI2ZDFkZGU2OTBlOTcwNjkxNjBkMDBiOGYwZmVkYmE5NTZjMjQ
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="card-wrapper container-sm d-flex justify-content-around"
+              >
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-SE-GPS-44mm-493839558-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTEyMXxpbWFnZS9qcGVnfGltYWdlcy9oOWMvaGQyLzEwMDUxMjQ2OTQ4MzgyLmpwZ3wwOGFlYTU5N2Y3ZjI5OTNiZmIyOTNlZjI4YmI0NDQ1OGQ5YTdiODk3MmNlNGU3M2MyZTczNTY5YWQyNzFjNTIw
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-493839585-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNjEyOXxpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDZkLzEwMDUwNzkzMjA5ODg2LmpwZ3xmMGFkNmViMzljZmU4MzYwOTY5ZTFhMWM1OWEwMTJkMDRiMWIzMmVhNjQ2OGY2ZmNjOWUzZjBjNjAxMzhjY2Zk
+                  "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Blue-Ocean-Band-494226900-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjUzN3xpbWFnZS9qcGVnfGltYWdlcy9oNjMvaDc4LzEwMDUwNjI4MzIxMzEwLmpwZ3w5YzcxZmFhZDNmOTRkMjk3NDMyZjFjODk2NDI3MmNiYzZjNjhhNjU3MWE0YTE4M2M3NDAxOWMxMzM3YjIwY2Rk
+                    "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Series-9-494226873-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MDg4fGltYWdlL2pwZWd8aW1hZ2VzL2gwMy9oYzAvMTAwNTEzMjQ4MDUxNTAuanBnfDk4MjYxNGQ2MzJiYjhjNTFjMzM2NGZmYWEzYTg0NzNhZmUwMjIwZDRmMmFlYzhiMDRjMTYyNDdlOWQ3OWNjYjI"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <div class="image">
+                    <img
+                      src="https://www.reliancedigital.in/medias/Apple-Watch-Ultra-2-GPS-Cellular-49mm-Titanium-Case-with-Orange-Beige-Trail-Loop-494226913-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w3MzM4MHxpbWFnZS9qcGVnfGltYWdlcy9oYmYvaGQwLzEwMDUwNjI3OTkzNjMwLmpwZ3w2ODMwMjc3ZGY1ZTI4MWNhMGNjYTA3OWNiMDY2YzQ1MmZjNjZjYjAxZmRiYTdlNmI0ZjAzMWI2YTlhYWYzOTQz "
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h6 class="text card-title">Card title</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls6"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls6"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
