@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <!--
-      lead
-    -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    <script
+      src="https://kit.fontawesome.com/033d55f774.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -51,6 +45,96 @@
     />
     <style>
       /* .......harshal........ */
+      /* .............brand promise.............. */
+      .apply-img > img {
+        width: 100%;
+      }
+
+      .BigB > h1 {
+        text-align: center;
+        color: rgb(0, 56, 135);
+      }
+      .container {
+        display: flex;
+        justify-content: space-around; /* Adjust as needed */
+      }
+
+      /* Style for each box */
+      .box {
+        width: 300px; /* Adjust as needed */
+        height: 100px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgb(247, 247, 247);
+      }
+      .box > h4 {
+        height: 5px;
+        margin: 0;
+        color: rgb(0, 56, 135);
+      }
+      .box > p {
+        opacity: 0.5;
+        font-size: 14px;
+      }
+      .box > img {
+        vertical-align: baseline;
+        max-width: 100%;
+        max-height: none;
+
+        height: 40px;
+      }
+      /* .............noice................ */
+      /* adding styles to the next button and previous button */
+      #btn,
+      #btn1 {
+        height: 105px;
+        border: 1px solid white;
+        width: 35px;
+        background-color: white;
+        margin: auto;
+        opacity: 0.8;
+        border-radius: 0px;
+      }
+      .btn:hover {
+        background-color: white;
+        visibility: visible;
+      }
+
+      .icon {
+        color: black;
+        font-size: 25px;
+      }
+      .icon:hover {
+        color: black;
+
+        opacity: 0.5;
+      }
+      /* dot button styles */
+      .dot [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: black;
+        opacity: 0.5;
+        transition: opacity 1s;
+      }
+      .dot [data-bs-target]:hover {
+        opacity: 2;
+      }
+      /* give gap between img and .carousel-1 */
+      .carousel-1 {
+        position: relative;
+        top: 12px;
+      }
+      /* manage img */
+      .first-image > img {
+        width: 100%;
+      }
       /* ....grate festival */
       .gridbox-2 {
         background-color: white;
@@ -1298,6 +1382,188 @@
               src="https://www.reliancedigital.in/medias/Smartwatches.jpg?context=bWFzdGVyfGltYWdlc3w1MTE1N3xpbWFnZS9qcGVnfGltYWdlcy9oNWIvaDYwLzEwMDc5NjE3NTE1NTUwLmpwZ3w1N2MwOGYwMGFjZTFjYzYzY2JjYWVkMjMyNDdjY2Y2Y2ZmYzM3ZDRiYjQzMDQ1MWU3ZDEwZDRhNzFlOTZkZDli"
               alt=""
             />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .............noice............ -->
+    <div class="hk-part">
+      <div class="first-image">
+        <!-- add first img  -->
+        <img
+          src="https://www.reliancedigital.in/medias/Best-Deals-on-Electronics-Banner-IDFC-Den-Hathway-1440X120-.jpg?context=bWFzdGVyfGltYWdlc3w4MTYzMHxpbWFnZS9qcGVnfGltYWdlcy9oYmIvaDY3LzEwMDk5NTQ3OTMwNjU0LmpwZ3wyMmNlNGZkYTI4MjJjZTA4MjY5OWY2ZGJlZDkzYWRmMmI0MmM0ZTQyOTMxOGUxMzg5YTc1MzljNzUxMGJlOTQ5"
+          class="img-fluid"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-1">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="dot carousel-indicators">
+            <!-- adding dot buttons -->
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- adding images in carousel -->
+            <div class="carousel-item active">
+              <img
+                src="https://www.reliancedigital.in/medias/Spark-1365X260.jpg?context=bWFzdGVyfGltYWdlc3wxMjc4MDh8aW1hZ2UvanBlZ3xpbWFnZXMvaDYxL2g5Mi8xMDA5ODUxMDk1NDUyNi5qcGd8YTQ1MGQ2NjI4MWZiYjQ1YjgwZGIzY2ZlN2I5YjZhZTZhNDE2OTRjODYzZjdkM2FhMDA3ZTZjYzJiMzQzNGVlMw"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.reliancedigital.in/medias/Oppo-Reno11-5G-Pre-Order-Carousel-Banner-11-01-2024-D.jpg?context=bWFzdGVyfGltYWdlc3w2Mjk0M3xpbWFnZS9qcGVnfGltYWdlcy9oZWIvaDZmLzEwMDk5MTgwMTA5ODU0LmpwZ3xiNjE0MDI3M2IyNGNkN2Q2MDYxNTY3NDJiNWJkYmFjMTQwYmI3NmNjZjlhMTMxNzJjN2E3NTE3OGFiNmY4OWY3"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.reliancedigital.in/medias/1365x260-3-.jpg?context=bWFzdGVyfGltYWdlc3w4NjMzMHxpbWFnZS9qcGVnfGltYWdlcy9oMTAvaGU4LzEwMDk3NzIxMzExMjYyLmpwZ3w1MzI5NzUzODIyMDE2M2ZjNmZkZmE3NGQ1OTQ2MDU3ZWJjYTYxNDQyOTVlYjRhZTMyOWQ1NDI0NWZmZmFjYWY1"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.reliancedigital.in/medias/Bose-1365x260.jpg?context=bWFzdGVyfGltYWdlc3w3NDMzM3xpbWFnZS9qcGVnfGltYWdlcy9oZGQvaDM0LzEwMDk4NTE5MzEwMzY2LmpwZ3xkYWVlYWNiOGZhMDRlMWEyNzhiZmFiMGYxODBiZGM0ODM5NWZiMjEyNmRiN2Y3NzkzM2YzYWEwMjQ1ODc4ZGI3"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.reliancedigital.in/medias/Asus-PreBook-2-.jpg?context=bWFzdGVyfGltYWdlc3wxNDI2Nzh8aW1hZ2UvanBlZ3xpbWFnZXMvaGMxL2g4Zi8xMDA5OTE4MzA1ODk3NC5qcGd8NGM3NDFjYzJhNTIxZTQxZTcwZjkzMWVjZTEzM2UyMmQxZDkzNTk2ZTRmNjMzMDRlYWUwZDMxODA2OGUxNGRlZA"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.reliancedigital.in/medias/Fire-Boltt-Dream-Carousel-Banner-05-01-2024-D-1-.jpg?context=bWFzdGVyfGltYWdlc3wxMTYxODV8aW1hZ2UvanBlZ3xpbWFnZXMvaDZmL2g3MS8xMDA5OTg3Mzg0MTE4Mi5qcGd8ZGU2MGI3NmVjM2MzOGZiOTVmYTI5ZGU4Nzc5NDk3M2ZiNzU2ZGU3YmU0ZWQ5OGZjOTgyZjJlODkxMGFkMjkyNw"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            id="btn"
+            class="btn carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <!-- add icon -->
+            <i class="icon fa-sharp fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            id="btn1"
+            class="btn carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <!-- add icon -->
+            <i class="icon fa-sharp fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- .......brand promise............. -->
+    <div class="BigB">
+      <div class="apply-img">
+        <img
+          src="https://www.reliancedigital.in/medias/RD-SBI-Card-Banner-D.jpg?context=bWFzdGVyfGltYWdlc3wxMDUwODN8aW1hZ2UvanBlZ3xpbWFnZXMvaGE2L2hiMi8xMDA3NTU4ODUyNjExMC5qcGd8OTgzOWJjZThlZDgyYWVmMmUxMWVlODdmMWRiOTMyZGQ5MjFlOTBmOGFmMDNjMGE4NmExNTdjZDlkMTM3ZTcyMw"
+          class="img-fluid"
+          alt="image"
+        />
+      </div>
+      <h1>THE RELIANCE DIGITAL BRAND PROMISE</h1>
+      <div class="three-box">
+        <div class="container">
+          <!-- Box 1 -->
+          <div class="box">
+            <!-- Content of Box 1 goes here -->
+            <img
+              src="https://www.reliancedigital.in/medias/Insta-Delivery-Brand-Promise-Icon.png?context=bWFzdGVyfGltYWdlc3wxNTM3fGltYWdlL3BuZ3xpbWFnZXMvaGI2L2gwNS85NDQ3MTcwMzQyOTQyLnBuZ3w2Yzc1ZmY1ZjYwOWIyNWU0ZTgwMjFlYmRkMTU5ZTgzMGI4ZDNmZTE2NjVjYmRlMmUwMmRiODI2OTExNWM5ZTdk"
+              alt=""
+            />
+            <h4>INSTA DELIVERY</h4>
+            <p>LESS THAN 3 HRS.</p>
+          </div>
+          <!-- Box 2 -->
+          <div class="box">
+            <!-- Content of Box 1 goes here -->
+            <img
+              src="https://www.reliancedigital.in/medias/Best-Finance-Options-2.png?context=bWFzdGVyfGltYWdlc3wxMjM4fGltYWdlL3BuZ3xpbWFnZXMvaDJmL2gxOS85NDQ3MTcwNDA4NDc4LnBuZ3xlMDBiNjY4YWI5YzMzYjZkZDhlZTMyMDhjYjE2YzI2OTY2NWJhYjk2M2VkNzdjZDg3NTNlMGEyMTA1ZjFlODZh"
+              alt=""
+            />
+            <h4>MULTIPLE FINANCE OPTIONS</h4>
+            <p>LESS THAN 3 HRS.</p>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="box">
+            <!-- Content of Box 3 goes here -->
+            <img
+              src="https://www.reliancedigital.in/medias/service-img.png?context=bWFzdGVyfGltYWdlc3w5MTB8aW1hZ2UvcG5nfGltYWdlcy9oMDYvaGEzLzkwOTA3OTc5OTQwMTQucG5nfGJjZmJhNzM1ODdkYTQ5ODI3YzNiMzQ1ZTdlM2JjNjUwMTBjM2E3YWFjNmUxZjdmMmEyOGRjZDMxOGI4ZWE0MWY"
+              alt=""
+            />
+            <h4>SERVICE GUARANTEE</h4>
+            <p>HASSLE FREE</p>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="box">
+            <!-- Content of Box 4 goes here -->
+            <img
+              src="https://www.reliancedigital.in/medias/unmatched-network-img.png?context=bWFzdGVyfGltYWdlc3w3NDV8aW1hZ2UvcG5nfGltYWdlcy9oODIvaDJhLzkwOTA3OTgwNTk1NTAucG5nfDFmMThjYzdiYTNiOTgxYjA5YzdlZTFiMmQyODI5MGY2NTM4ZTcxOWZkZTA1ZjAzY2Q1ZTk5YjQ1NTMxMWViYzU"
+              alt=""
+            />
+            <h4>UNMATCHED NETWORK</h4>
+            <p>700 CITIES,2000 STORES</p>
           </div>
         </div>
       </div>
