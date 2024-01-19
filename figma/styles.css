@@ -224,4 +224,140 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.blue {
+  width: 100%;
+  height: 768px;
+  flex-shrink: 0;
+  background: #434ccc;
+  margin-top: 0;
+}
+.blue div {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 79px;
+}
+.blue div h5 {
+  margin: auto;
+  width: 124px;
+  height: 24px;
+  top: 2943px;
+  left: 658px;
+  /* H5 */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+}
+.blue h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 21px;
+  /* H2 */
+  font-family: "DM Serif Display";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 64px; /* 114.286% */
+}
+.blue p {
+  width: 508px;
+  height: 83px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 29px;
+  margin-left: 435px;
+  margin-right: 435px;
+  /* Text_Big */
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.yellow {
+  width: 1170px;
+  height: 512px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #f1b505;
+  position: absolute;
+  top: 345px;
+  left: 86px;
+  display: flex;
+}
+.yellow .left-yellow {
+  color: rgba(255, 255, 255, 0.5);
+  /* Text_Gray */
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.yellow .left-yellow div {
+  margin-top: 156px;
+  margin-left: 100px;
+}
+.yellow .left-yellow div h2 {
+  margin-top: 21px;
+  color: #fff;
+  width: 370px;
+  height: 128px;
+  /* H2 */
+  font-family: "DM Serif Display";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 114.286% */
+}
+.yellow .left-yellow button {
+  width: 170px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.right-yellow {
+  width: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+  background-image: url("./image/download.svg");
+  background-position: center;
+}
+
+.orange {
+  display: flex;
+  width: 80%;
+}
+
+.orange-left {
+  width: 768px;
+  height: 512px;
+  flex-shrink: 0;
+  background-image: url("./image/second.svg");
+}
+
+.orange-right {
+  width: 768px;
+  height: 512px;
+  flex-shrink: 0;
+  background-image: url("./image/third.svg");
 }/*# sourceMappingURL=styles.css.map */
