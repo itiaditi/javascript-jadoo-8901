@@ -1,0 +1,278 @@
+.nav-one{
+    background-color: 
+    #ed4d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-logo{
+    width: 65%;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    max-width: 100vw;
+}
+.nav-anchor{
+    font-size: 13px;
+    text-decoration: none;
+}
+.nav-anchor:hover{
+    text-decoration: underline;
+}
+.nav-unordered-list{
+    list-style: none;
+    width:15vw;
+}
+#nav-home,#nav-audio,#nav-televisions,#nav-mobiles,#nav-computers,#nav-cameras,#nav-kitchen,#nav-personalCare,#nav-accessories{
+    position: fixed;
+    top: auto;
+    left: 20px;
+    width: 97%;
+    border: none;
+    margin: 0;
+    padding: 0
+}
+#nav-home,#nav-televisions,#nav-audio,#nav-mobiles,#nav-computers,#nav-cameras,#nav-kitchen,#nav-personalCare,#nav-accessories> div{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.nav-div-below-id{
+    border-radius: none; background-color: #272e61;
+}
+.foot-unordered-list{
+    list-style: none;
+    width: 25%;
+}
+.foot-anchor{
+    font-size: 16px;
+    text-decoration: none;
+}
+.foot-anchor:hover{
+    opacity: 50%;
+}
+/* madhu */
+ /*header*/
+ .text {
+    color: #083984;
+  }
+  .image + .text:hover {
+    cursor: pointer;
+    color: red;
+  }
+  .image > img {
+    transition: transform 0.5s ease-in;
+  }
+  .card :hover {
+    cursor: pointer;
+    .text {
+      color: red;
+    }
+    /* color: red;*/
+    .image > img {
+      transition: transform 0.5s ease-in;
+    }
+  }
+
+  .container-fluid {
+    padding: 10px;
+  }
+  .card-slider {
+    width: 90%;
+    margin: auto;
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 98%;
+    margin-bottom: 24px;
+    a {
+      text-decoration: none;
+      background-color: blue;
+      font-size: 15px;
+      color: white;
+      div {
+        background: rgb(0, 51, 128);
+        border: 1px solid rgb(0, 51, 128);
+        border-radius: 2px;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 12px;
+      }
+    }
+  }
+  button {
+    /* padding: 80px; */
+    margin: auto;
+    height: 90px;
+    width: 3%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 2;
+  }
+  div#carouselExampleControls1,
+  div#carouselExampleControls2,
+  div#carouselExampleControls3,
+  div#carouselExampleControls4,
+  div#carouselExampleControls5,
+  div#carouselExampleControls6 {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  .card {
+    border-style: none;
+  }
+
+  span.carousel-control-prev-icon,
+  span.carousel-control-next-icon {
+    background-color: black;
+    /* border: 2px solid blue; */
+    opacity: 2;
+    height: 79px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  /* .card-title{
+      display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2; 
+    }*/
+  .card {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* Set the number of lines you want to display */
+    -webkit-line-clamp: 2;
+
+    /* Disable the generation of ellipsis */
+    text-overflow: unset;
+    /* margin: auto;
+    margin-top: 10px;
+    
+    font-size: 14px;
+    box-sizing: border-box;*/
+    width: 100%;
+    height: auto;
+    color: #003380;
+    height: 2.8em;
+    line-height: 1.4em;
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  .image > img {
+    width: 85%;
+  }
+  .image {
+    display: grid;
+    place-items: center;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    width: 2%;
+  }
+  .card:hover {
+    .text {
+      color: red;
+    }
+  }
+  .card {
+    margin: 10px;
+  }
+  .container-fluid {
+    margin: 0;
+    background: rgb(249, 249, 249);
+  }
+  .heading {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .heading a {
+    border-radius: 2px;
+  }
+  .heading h2 {
+    color: #333;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0.7em;
+    margin: 0;
+    padding: 0 10px 2px 0;
+  }
+  .parent {
+    background-color: #f9f9f9;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 2;
+  }
+  .image > img:hover {
+    transform: scale(1.1);
+    overflow-y: hidden;
+    cursor: pointer;
+  }
+  .image > img {
+    transition: transform 0.5s ease-in;
+  }
+  .image > img {
+    transform-origin: top;
+  }
+  p {
+    font-size: 14px;
+    line-height: 0.2;
+  }
+  .discount {
+    text-align: center;
+    font-size: 14px;
+    width: 81%;
+  }
+  /*.discount {
+    display: none;
+  }*/
+  #carouselExampleControls1 > .card-wrapper:nth-child(1) {
+    .discount {
+      display: block;
+    }
+  }
+  .price{
+    font-weight: bold;
+  }
+  .star{
+    display: flex;
+    p{
+      margin-top:6px;
+      font-size: medium;
+    }
+   
+  }
+  #lastviewall{
+    width:100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #003380;
+    color: white;
+    border: 1px solid #003380;
+  }
+  #lastviewall:hover{
+    background-color: white;
+    color: black;
+  }
+
+
+
+
