@@ -39,7 +39,17 @@
 .nav-div-below-id{
     border-radius: none; background-color: #272e61;
 }
-
+.foot-unordered-list{
+    list-style: none;
+    width: 25%;
+}
+.foot-anchor{
+    font-size: 16px;
+    text-decoration: none;
+}
+.foot-anchor:hover{
+    opacity: 50%;
+}
 
 
 
