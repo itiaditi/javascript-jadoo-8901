@@ -1,0 +1,45 @@
+.nav-one{
+    background-color: 
+    #ed4d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-logo{
+    width: 65%;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    max-width: 100vw;
+}
+.nav-anchor{
+    font-size: 13px;
+    text-decoration: none;
+}
+.nav-anchor:hover{
+    text-decoration: underline;
+}
+.nav-unordered-list{
+    list-style: none;
+    width:15vw;
+}
+#nav-home,#nav-audio,#nav-televisions,#nav-mobiles,#nav-computers,#nav-cameras,#nav-kitchen,#nav-personalCare,#nav-accessories{
+    position: fixed;
+    top: auto;
+    left: 20px;
+    width: 97%;
+    border: none;
+    margin: 0;
+    padding: 0
+}
+#nav-home,#nav-televisions,#nav-audio,#nav-mobiles,#nav-computers,#nav-cameras,#nav-kitchen,#nav-personalCare,#nav-accessories> div{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.nav-div-below-id{
+    border-radius: none; background-color: #272e61;
+}
+
+
+
+
