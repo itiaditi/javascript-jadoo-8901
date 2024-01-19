@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <header>
+  <!-- Below is the code of header -->
+  <header class="fixed-top">
     <ul class="nav justify-content-end nav-one d-flex align-items-center" style="height: 30px;">
       <li class="nav-item d-flex align-items-center" style="height: 25px;">
         <a class="nav-link text-light" aria-current="page" href="#">Find a store
@@ -30,9 +31,9 @@
       </li>
     </ul>
     <nav class="navbar navbar-expand-lg pt-0">
-      <div class="container-fluid nav-one justify-content-between">
+      <div class="container-fluid nav-one justify-content-between p-0">
         <a class="navbar-brand" style="width: 10%; margin-left: 3%;" href="#"><img class="nav-logo"
-            src="./Screenshot 2024-01-18 134317.png" alt=""></a>
+            src="./logo.png" alt=""></a>
         <form class="d-flex nav-form m-auto" role="search" style="width: 50%; height: 35px;">
           <input class="bg-light border-0 rounded-start-pill" type="search"
             placeholder="       Find your favorite product" aria-label="Search" style="width: 90%; font-size: 16px;">
@@ -63,46 +64,47 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-between">
 
-            <li class="nav-item dropdown nav-left">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 MOBILES & TABLETS
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Smartwatches</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Smartphones</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Apple</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Samsung</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Fireboltt</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Boat</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Noise</a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Accessories</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Tablet Accessories</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Mobile Accessories</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Mobile Grips & Stands</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Car Mobile Holders</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Cables & Cords</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Chargers & Adaptors</a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Headphones & Headsets</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Tablets & eReaders</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Every Day use Tablets below 15000</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Premium Tablets, Above 15001</a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Power Banks</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>eSlates</h6></a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>AI Learning Robots</h6></a></li>
-                  </ul>
-                  <div>
-                    <img src="./Screenshot 2024-01-18 201001.png" alt="" style="width: 50vw;">
+              <div class="dropdown-menu p-0">
+                <div id="nav-mobiles" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Smartwatches</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Smartphones</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Apple</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Samsung</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Fireboltt</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Boat</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Noise</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Accessories</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Tablet Accessories</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Mobile Accessories</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Mobile Grips & Stands</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Car Mobile Holders</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Cables & Cords</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Chargers & Adaptors</a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Headphones & Headsets</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Tablets & eReaders</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Every Day use Tablets below 15000</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Premium Tablets, Above 15001</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Power Banks</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>eSlates</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>AI Learning Robots</h6></a></li>
+                    </ul>
+                    <div>
+                      <img src="./mobiles.png" alt="">
+                    </div>
                   </div>
-                </div>
-                
+                </div>              
               </div>
             </li>
 
@@ -111,33 +113,35 @@
                 aria-haspopup="true" aria-expanded="false">
                 TELEVISIONS
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Televisions</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Smart TVs</a></li>
-                    <li><a class="text-light nav-anchor" href="#">32 Inch TVs</a></li>
-                    <li><a class="text-light nav-anchor" href="#">43 Inch TVs</a></li>
-                    <li><a class="text-light nav-anchor" href="#">55 Inch TVs</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Android TVs</a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Gaming</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Consoles</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Accessories</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Titles</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Controllers</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Projectors</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Streaming Devices</h6></a></li>
-                  </ul>
-                  <ul class="nav-unordered-list" style="width: 25vw;">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Reconnect Disney | Marvel Audio Collection</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>TV & Audio Accessories</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Virtual Reality Headsets</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Stabilizers & Surge Protectors</a></li>
-                  </ul>
-                </div>  
+              <div class="dropdown-menu p-0">
+                <div id="nav-televisions" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Televisions</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart TVs</a></li>
+                      <li><a class="text-light nav-anchor" href="#">32 Inch TVs</a></li>
+                      <li><a class="text-light nav-anchor" href="#">43 Inch TVs</a></li>
+                      <li><a class="text-light nav-anchor" href="#">55 Inch TVs</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Android TVs</a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Gaming</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Consoles</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Accessories</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Titles</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Controllers</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Projectors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Streaming Devices</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list" style="width: 25vw;">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Reconnect Disney | Marvel Audio Collection</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>TV & Audio Accessories</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Virtual Reality Headsets</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Stabilizers & Surge Protectors</a></li>
+                    </ul>
+                  </div> 
+                </div>                
               </div>
             </li>
 
@@ -146,42 +150,46 @@
                 aria-haspopup="true" aria-expanded="false">
                 AUDIO
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Headphones & Headsets</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">True Wireless</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Earphones</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Bluetooth Headphones</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Headsets</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Wired Headphones</a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Speakers & Soundbars</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Bluetooth Speakers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Smart Speakers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Home Theatre Systems</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Specialty Speakers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Soundbars</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Party Speakers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Multimedia Speakers</a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Musical Instruments</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Guitars and Ukuleles</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Microphones</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Musical Keyboards</a></li>
-                  </ul>
+              <div class="dropdown-menu p-0">
+                <div id="nav-audio" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Headphones & Headsets</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">True Wireless</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Earphones</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Bluetooth Headphones</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Headsets</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Wired Headphones</a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Speakers & Soundbars</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Bluetooth Speakers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Speakers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Home Theatre Systems</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Specialty Speakers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Soundbars</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Party Speakers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Multimedia Speakers</a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Musical Instruments</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Guitars and Ukuleles</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Microphones</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Musical Keyboards</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" >
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 HOME APPLIANCES
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
+              <div class="dropdown-menu p-0">
+              <div id="nav-home" class="nav-div-below-id">
                 <div class="d-flex">
                   <ul class="nav-unordered-list">
                     <li><a class="text-light nav-anchor" href="#"><h6>Air Conditioners</h6></a></li>
@@ -219,6 +227,7 @@
                   </ul>                  
                 </div>
               </div>
+            </div>
             </li>
 
             <li class="nav-item dropdown">
@@ -226,55 +235,60 @@
                 aria-haspopup="true" aria-expanded="false">
                 COMPUTERS
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Laptops</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Basic use Laptops</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Students Laptops</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Thin and light Laptops</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Multi-Tasking Laptops</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Gaming Laptops</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Content creator Laptops</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Computer Monitors</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Desktops & All-In-Ones</h6></a></li>
-                  </ul>               
-                  <ul class="nav-unordered-list" style="width: 20vw;">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Bluetooth & WiFi Speakers</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Internet Connectivity Devices</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Routers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">WiFi Range Extenders</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Wireless USB Adaptors</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Printers & Inks</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Printers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Toners & Ink Cartridges</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Data Storage Devices</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Pen Drives & OTG Drives</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Hard Disk & SSD</a></li>
-                  </ul>               
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Computer Accessories</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Upto 72% Off, Only on Reliancedigital.in</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Computer Networking Cables</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Chargers & Adaptor</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Batteries</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Hubs & Docks</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Bags & Sleeves</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Cooling Pad</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Screen Protectors</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Laptop Tables & Stands</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Mouse Pads</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Input Devices</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Keyboards</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Computer Mouse</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Stylus Pens</a></li>
-                  </ul>
-                </div>               
+              <div class="dropdown-menu p-0">
+                <div id="nav-computers" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Laptops</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Basic use Laptops</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Students Laptops</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Thin and light Laptops</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Multi-Tasking Laptops</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Gaming Laptops</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Content creator Laptops</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Computer Monitors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Desktops & All-In-Ones</h6></a></li>
+                    </ul>               
+                    <ul class="nav-unordered-list" style="width: 20vw;">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Bluetooth & WiFi Speakers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Internet Connectivity Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Routers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">WiFi Range Extenders</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Wireless USB Adaptors</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Printers & Inks</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Printers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Toners & Ink Cartridges</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Data Storage Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Pen Drives & OTG Drives</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Hard Disk & SSD</a></li>
+                    </ul>               
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Computer Accessories</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Upto 72% Off, Only on Reliancedigital.in</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Computer Networking Cables</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Chargers & Adaptor</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Batteries</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Hubs & Docks</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Bags & Sleeves</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Cooling Pad</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Screen Protectors</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laptop Tables & Stands</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Mouse Pads</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Input Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Keyboards</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Computer Mouse</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Stylus Pens</a></li>
+                    </ul>
+                    <div>
+                      <img src="./laptop.png" alt="">
+                    </div>
+                  </div> 
+                </div>                             
               </div>
             </li>
 
@@ -283,214 +297,179 @@
                 aria-haspopup="true" aria-expanded="false">
                 CAMERAS
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>DSLR Cameras</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Mirrorless Cameras</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Point & Shoot Cameras</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>ProSumer Cameras</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Action Cameras</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Photo Storage Devices</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Pen Drives</a></li>
-                  </ul>              
-                  <ul class="nav-unordered-list" style="width: 25vw;">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Binoculars</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Camera Lens</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Digital Camera Accessories</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Camera Batteries & Chargers</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Camera bags & cases</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Tripods & Monopods</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Action Camera Accessories</a></li>
-                  </ul>
-                </div>
-                
+              <div class="dropdown-menu p-0">
+                <div id="nav-cameras" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>DSLR Cameras</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Mirrorless Cameras</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Point & Shoot Cameras</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>ProSumer Cameras</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Action Cameras</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Photo Storage Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Pen Drives</a></li>
+                    </ul>              
+                    <ul class="nav-unordered-list" style="width: 25vw;">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Binoculars</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Camera Lens</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Digital Camera Accessories</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Camera Batteries & Chargers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Camera bags & cases</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Tripods & Monopods</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Action Camera Accessories</a></li>
+                    </ul>
+                  </div>
+                </div>               
               </div>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 KITCHEN APPLIANCES
               </a>
-              <div class="dropdown-menu" style="border-radius: none; margin-top: -0.5px; background-color: #272e61;">
-                <div class="d-flex">
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Mixers</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">2 Jar</a></li>
-                    <li><a class="text-light nav-anchor" href="#">3 Jar</a></li>
-                    <li><a class="text-light nav-anchor" href="#">4 Jar</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Water Purifiers</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Electric Kettle</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Microwaves Oven</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">Convection</a></li>
-                    <li><a class="text-light nav-anchor" href="#">Solo & Grill</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>OTG</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Air Fryer</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Food Processor</h6></a></li>
-                  </ul>               
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Cooktops</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">1 Burner</a></li>
-                    <li><a class="text-light nav-anchor" href="#">2 Burner</a></li>
-                    <li><a class="text-light nav-anchor" href="#">3 Burner</a></li>
-                    <li><a class="text-light nav-anchor" href="#">4 Burner</a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Induction Cooktops</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Rice Cooker</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Hobs</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Hoods/Chimneys</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Cookware</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Built Ins</h6></a></li>
-                  </ul>
-                  <ul class="nav-unordered-list">
-                    <li><a class="text-light nav-anchor" href="#"><h6>Juicer</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#">1 Jar</a></li>
-                    <li><a class="text-light nav-anchor" href="#">2 Jar</a></li>
-                    <li><a class="text-light nav-anchor" href="#">3 Jar</a></li>
-                    <li><a class="text-light nav-anchor" href="#">4+ Jar</a></li>
-                    <br>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Hand Blender</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Hand Mixer</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Wet Grinder</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Coffee/Tea Makers</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Pop up Toasters</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Sandwich Makers</h6></a></li>
-                    <li><a class="text-light nav-anchor" href="#"><h6>Choppers</h6></a></li>
-                  </ul>
-                </div>               
+              <div class="dropdown-menu p-0">
+                <div id="nav-kitchen" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Mixers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">2 Jar</a></li>
+                      <li><a class="text-light nav-anchor" href="#">3 Jar</a></li>
+                      <li><a class="text-light nav-anchor" href="#">4 Jar</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Water Purifiers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Electric Kettle</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Microwaves Oven</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Convection</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Solo & Grill</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>OTG</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Air Fryer</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Food Processor</h6></a></li>
+                    </ul>               
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Cooktops</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">1 Burner</a></li>
+                      <li><a class="text-light nav-anchor" href="#">2 Burner</a></li>
+                      <li><a class="text-light nav-anchor" href="#">3 Burner</a></li>
+                      <li><a class="text-light nav-anchor" href="#">4 Burner</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Induction Cooktops</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Rice Cooker</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hobs</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hoods/Chimneys</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Cookware</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Built Ins</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Juicer</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">1 Jar</a></li>
+                      <li><a class="text-light nav-anchor" href="#">2 Jar</a></li>
+                      <li><a class="text-light nav-anchor" href="#">3 Jar</a></li>
+                      <li><a class="text-light nav-anchor" href="#">4+ Jar</a></li>
+                      <br>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hand Blender</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hand Mixer</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Wet Grinder</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Coffee/Tea Makers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Pop up Toasters</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Sandwich Makers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Choppers</h6></a></li>
+                    </ul>
+                  </div> 
+                </div>              
               </div>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 PERSONAL CARE
               </a>
-              <div class="dropdown-menu">
-                <ul>
-                  <li><a class="dropdown-item" href="#">Shavers & Trimmers</a></li>
-                  
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Epilators</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Hair Dryers & Stylers</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Weighing Scales</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Irons</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Hygiene & Personal Care</a></li>
-                  <li><a class="dropdown-item" href="#">Digital Thermometers</a></li>
-                  <li><a class="dropdown-item" href="#">Massagers</a></li>
-                  <li><a class="dropdown-item" href="#">Misc. Care Devices</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Garment Steamers</a></li>
-                </ul>
+              <div class="dropdown-menu p-0">
+                <div id="nav-personalCare" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Shavers & Trimmers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Epilators</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hair Dryers & Stylers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Weighing Scales</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Irons</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Hygiene & Personal Care</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Digital Thermometers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Massagers</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Misc. Care Devices</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Garment Steamers</h6></a></li>
+                    </ul>
+                    <div style="margin-left: auto;">
+                      <img src="./Personalcare.png" alt="">
+                    </div>
+                  </div>
+                </div> 
               </div>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 ACCESSORIES
               </a>
-              <div class="dropdown-menu">
-                <ul>
-                  <li><a class="dropdown-item" href="#">Bags, Cases & Sleeves</a></li>
-                  
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Smart Devices</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Plugs</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Cameras</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Sensors</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Lights</a></li>
-                  <li><a class="dropdown-item" href="#">Smart Speakers</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Batteries</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Power Banks</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Cables & Cords</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Chargers & Adaptors</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Bluetooth & WiFi Speakers</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Reconnect Disney | Marvel Accessories</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Data Storage Devices</a></li>
-                  <li><a class="dropdown-item" href="#">Memory Cards</a></li>
-                  <li><a class="dropdown-item" href="#">Pen Drives & OTG Drives</a></li>
-                  <li><a class="dropdown-item" href="#">Hard Disks & SSD</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Mounts & Stands</a></li>
-                  <li><a class="dropdown-item" href="#">Air Conditioner Stands</a></li>
-                  <li><a class="dropdown-item" href="#">Car Mobile Holders</a></li>
-                  <li><a class="dropdown-item" href="#">Mobile Grips & Stands</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Surge Protectors</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Webcams</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Headphones & Headsets</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Cleaners & Protectors</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Computer Mouse</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Keyboards</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Indoor Lighting</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Office Electronics</a></li>
-                  <li><a class="dropdown-item" href="#">Laminators</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Tyre Inflators</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Routers</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Screen Guards & Protectors</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Power Strips & Extension Cords</a></li>
-                </ul>
-                <ul>
-                  <li><a class="dropdown-item" href="#">Stabilizers</a></li>
-                </ul>
+              <div class="dropdown-menu p-0">
+                <div id="nav-accessories" class="nav-div-below-id">
+                  <div class="d-flex">
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Bags, Cases & Sleeves</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Smart Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Plugs</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Cameras</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Sensors</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Lights</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Smart Speakers</a></li> 
+                      <li><a class="text-light nav-anchor" href="#"><h6>Batteries</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Power Banks</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Cables & Cords</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Chargers & Adaptors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Bluetooth & WiFi Speakers</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Reconnect Disney | Marvel Accessories</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Data Storage Devices</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Memory Cards</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Pen Drives & OTG Drives</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Hard Disks & SSD</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Mounts & Stands</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Air Conditioner Stands</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Car Mobile Holders</a></li>
+                      <li><a class="text-light nav-anchor" href="#">Mobile Grips & Stands</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Surge Protectors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Webcams</h6></a></li>
+                    </ul>
+                    <ul class="nav-unordered-list">
+                      <li><a class="text-light nav-anchor" href="#"><h6>Headphones & Headsets</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Cleaners & Protectors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Computer Mouse</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Keyboards</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Indoor Lighting</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Office Electronics</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#">Laminators</a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Tyre Inflators</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Routers</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Screen Guards & Protectors</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Power Strips & Extension Cords</h6></a></li>
+                      <li><a class="text-light nav-anchor" href="#"><h6>Stabilizers</h6></a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
+
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
 </body>
 
-</html>fw29
+</html>
