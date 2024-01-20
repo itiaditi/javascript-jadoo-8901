@@ -1,15 +1,12 @@
-body{
-    background-color: rgb(237, 228, 228);
-     
-    
-}
- .box1{
-    width: 100%;
+//  .....harshal.....
+ 
+.box1{
+    width: 1440px;
     height: 456px;
     flex-shrink: 0;
     border: 1px solid;
    display: flex;
-   background-color: red;
+  
     .item1{
        
         width: 50%;
@@ -20,15 +17,15 @@ body{
        flex-direction: column;
        justify-content: center;
 
-          :nth-child(1){
+        :nth-child(1){
         color: var(--Text_White, #FFF);
-       border-left-color: white;
+        border-left-color: white;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-       margin-top: 50px;
-        
-        // padding: 127px 1175px 505px 135px;
+        margin-top: 50px;
+       
+       
         line-height: 24px; /* 150% */
         letter-spacing: 4.8px;
         text-transform: uppercase;
@@ -69,12 +66,12 @@ body{
        }
        
     }
-    .item2{
-        width: 50%;
+    .item2{   
+        flex: 1;  
         text-align:center;
         border: 1px solid rgb(3, 10, 3);
-       background-image: url(./image/figma\ logo.svg);
-       
+        background: url(./image/figma\ logo.svg), lightgray 0px 0px / 100% 100% no-repeat;
+        
         
      }
      .box2{
@@ -205,23 +202,22 @@ line-height: 32px; /* 160% */
 
     }
     .last-grid{
-        height:500px ;
-        width: 100%;
-        
+        height:300px ;
+        width: auto;
+        column-gap: 22px;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
-        place-items: center;
-        
+        gap: 100px;
+        justify-content: center;
+        grid-template-columns: repeat(3,300px);
+          
     }
     .last-grid>div{
-        height: 90px;
-        width: 250px;
-        
-     gap: 15px;
-     border-radius: 5px;
-     background: #FFF;
-     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
+        height: 100px;  
+        width: 300px;
+        gap: 20px;
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
    
        
     }
@@ -229,6 +225,7 @@ line-height: 32px; /* 160% */
         display: flex;
    align-items: center;
    justify-content: center;
+   
    padding: 12px;
   
     >img{
