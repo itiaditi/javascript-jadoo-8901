@@ -1,268 +1,3 @@
-body{
-    background-color: rgb(237, 228, 228);
-     
-    
-}
- .box1{
-    width: 100%;
-    height: 456px;
-    flex-shrink: 0;
-    border: 1px solid;
-   display: flex;
-   background-color: red;
-    .item1{
-       
-        width: 50%;
-       text-align: left;
-       border: 1px solid rgb(3, 10, 3);
-       background: #434CCC;
-       display: grid;
-       flex-direction: column;
-       justify-content: center;
-
-          :nth-child(1){
-        color: var(--Text_White, #FFF);
-       border-left-color: white;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-       margin-top: 50px;
-        
-        // padding: 127px 1175px 505px 135px;
-        line-height: 24px; /* 150% */
-        letter-spacing: 4.8px;
-        text-transform: uppercase;
-       }
-       :nth-child(2){
-        color: var(--Text_White, #FFF);
-
-        /* H2 */
-        font-family: "DM Serif Display";
-        font-size: 56px;
-        font-style: normal;
-        font-weight: 400;
-      
-        margin-top: 2px;
-        line-height: 64px; /* 114.286% */
-       }
-       :nth-child(3){
-        color: var(--Text_White, #FFF);
-
-        /* Text_Big */
-        font-family: "DM Sans";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px; /* 160% */
-        margin-top: -20px;
-           }
-        button{
-            width: 170px;
-            height: 48px;
-            flex-shrink: 0;     
-            background-color: rgb(241,181,5);
-            color: var(--Text_White, #FFF);
-            border-radius: 10px;
-            margin-bottom: 90px;
-           }
-         
-       }
-       
-    }
-    .item2{
-        width: 50%;
-        text-align:center;
-        border: 1px solid rgb(3, 10, 3);
-       background-image: url(./image/figma\ logo.svg);
-       
-        
-     }
-     .box2{
-        width: 1440px;
-height: 1600px;
-flex-shrink: 0;
-border: 2px solid black;
-background-color: rgb(245,246,252);
-.mid-part{
-    display: flex;
-    justify-content: space-around;
-   
-}
-h5{
-    color: var(--Text_Black, #000);
-     text-align: center;
-     /* H5 */
-     font-family: "DM Sans";
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 400;
-     text-transform: uppercase;
-     line-height: 24px; /* 150% */
-     letter-spacing: 4.8px;
-      
-}
-h2{
-    color: var(--Text_Black, #000);
-    text-align: center;
-
-    /* H2 */
-    font-family: "DM Serif Display";
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px; /* 114.286% */
-}
->p{
-    color: var(--Text_Black, #000);
-text-align: center;
-
-/* Text_Big */
-font-family: "DM Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 160% */
-}
-.gridcard{
-    display: grid;
-    grid-template-columns: repeat(3,100px);
-    
-    width: 370px;
-height: 480px;
-flex-shrink: 0;
-border-radius: 5px;
-text-align: center;
-justify-content: center;
-background: #FFF;
-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.30);
->har{
- margin: 50px;
-}
- 
-.card>img{
-margin-top: 28px;
-    width: 300px;
-height: 300px;
-flex-shrink: 0;
-border-radius: 50%;
-}
-.card>h4{
-     text-align: left;
-    
-     width: 300px;
-     color: var(--Text_Black, #000);
-
-     /* H4 */
-     font-family: "DM Serif Display";
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 32px; /* 133.333% */
-  
-}
-.info{
-    width: 300px;
-   margin-top: -10px;
-    box-shadow: 0 0 0 0 whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid rgb(244, 234, 234);
-   
-.logos{
-   display: flex;
-   
-    width: 100px;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
->p{
-    color: var(--text-black-50, rgba(0, 0, 0, 0.50));
-
-     /* Text_Gray */
-     font-family: "DM Sans";
-     font-size: 16px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 24px; /* 150% */
-}
-}
-}
-    }
- .ending-part{
-     
-    >p{
-        color: var(--Text_Black, #000);
-text-align: center;
- 
- 
-/* Text_Big */
-font-family: "DM Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px; /* 160% */
-
-    }
-    .last-grid{
-        height:500px ;
-        width: 100%;
-        
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
-        place-items: center;
-        
-    }
-    .last-grid>div{
-        height: 90px;
-        width: 250px;
-        
-     gap: 15px;
-     border-radius: 5px;
-     background: #FFF;
-     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.30);
-   
-       
-    }
-    .box{
-        display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 12px;
-  
-    >img{
-        width: 43px;
-        height: 49px;
-        flex-shrink: 0;
-        margin-top: -25px;
- 
-    }
-    .subdiv>h4{
-        
-        color: var(--Text_Black, #000);
-          font-family: "DM Serif Display";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px; /* 133.333% */
-    }
-          p{
-            color: var(--text-black-50, rgba(0, 0, 0, 0.50));
-            margin-top: -20px;
-            height: 65px;
-            flex-shrink: 0;
-            /* Text_Gray */
-            font-family: "DM Sans";
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;  
-          }
-    }
-   
- }
-//  madhu
 $box1c: #434CCC; $box2c:#FFDD78;
 body{
     margin:0;
@@ -342,14 +77,14 @@ body{
             }
         }
         .picandduo{
-            width:100%;
+            width:1440px;
             height:714px;
             border: 2px solid black;
             display: flex;
             border:none;
             .content{
                 height:401px;
-                width:50%;
+                width:515px;
                 border:2px solid red;
                 margin-left: 137px;
                 margin-top: 127px;
@@ -396,14 +131,14 @@ body{
 
             }
             .image{
-                width: 50%;
+                width: 840px;
                 height: 580px;
                 border:2px solid black;
                 margin-right: 120px;
                 margin-top: 120px;
                 margin-bottom: 500px;
-                // background-image: url(https://s3-alpha-sig.figma.com/img/5559/f5ce/3724b2681eac92a3bcfd7599cd0eec3a?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOpqSSaCJgVh13TR2Vitf4X2vfl8ayArypSxM4sJONsbxAwd8NlKTsxUo20ChznvGrX60-snvP0M4nK1D8rE01rl4HVXHk2ynfgmmwUI0q44uoqBgz-Xe2GbqSX5~RbuUzVG6ufSEev7lxCN2z5Y0gYOevPVlOJBVYAbh87e-N8tHutEEUDPCaGyEZApsFBrIWsxlEZG2hCRviBuKUYQTL0nqClJM6AnHx95-i9ppY~6Xog-C64vcetaUCU69-TDVoJRy3cUPd-Ck3In0IIfPf1MCbTsN2YLZxjTuEz3ikOj22fzTa5wCIQZLuZfPO7FLqxlp5FjjivjoNmS0IoUww__);
-                // background-size: cover;
+                background-image: url(https://s3-alpha-sig.figma.com/img/5559/f5ce/3724b2681eac92a3bcfd7599cd0eec3a?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOpqSSaCJgVh13TR2Vitf4X2vfl8ayArypSxM4sJONsbxAwd8NlKTsxUo20ChznvGrX60-snvP0M4nK1D8rE01rl4HVXHk2ynfgmmwUI0q44uoqBgz-Xe2GbqSX5~RbuUzVG6ufSEev7lxCN2z5Y0gYOevPVlOJBVYAbh87e-N8tHutEEUDPCaGyEZApsFBrIWsxlEZG2hCRviBuKUYQTL0nqClJM6AnHx95-i9ppY~6Xog-C64vcetaUCU69-TDVoJRy3cUPd-Ck3In0IIfPf1MCbTsN2YLZxjTuEz3ikOj22fzTa5wCIQZLuZfPO7FLqxlp5FjjivjoNmS0IoUww__);
+                background-size: cover;
                 border: none;
 
             }
@@ -756,4 +491,3 @@ body{
 
 }
 }
- 
