@@ -1,3 +1,517 @@
+//Aditi
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+$Text_White: #fff;
+$text-white-50: rgba(255, 255, 255, 0.5);
+
+.svg {
+  position: relative;
+}
+
+.content {
+  margin-top: 58px;
+  margin-left: 91px;
+  margin-right: 276px;
+}
+
+.orange-left p {
+  margin: 0;
+}
+
+.orange-left h4 {
+  margin-top: 17px;
+}
+
+.orange-right p {
+  margin: 0;
+}
+
+.orange-right h4 {
+  margin-top: 17px;
+}
+
+.svg {
+  margin-top: 24px;
+}
+
+.svg > svg:nth-child(1) {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
+.blue {
+  width: 100%;
+  flex-shrink: 0;
+  background: #434ccc;
+  margin-top: 0;
+
+  div {
+    color: $Text_White;
+    text-align: center;
+    margin-top: 0;
+
+    h5 {
+      padding-top: 79px;
+      margin: auto;
+      top: 2943px;
+      left: 658px;
+
+      /* H5 */
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: 4.8px;
+      text-transform: uppercase;
+    }
+  }
+
+  h2 {
+    color: $Text_White;
+    text-align: center;
+    margin-top: 21px;
+
+    /* H2 */
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 64px; /* 114.286% */
+  }
+
+  p {
+    width: auto;
+    flex-shrink: 0;
+    color: $Text_White;
+    text-align: center;
+    margin-top: 29px;
+    margin-left: 307px;
+    margin-right: 302px;
+
+    /* Text_Big */
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+  }
+}
+
+.orange {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+
+  &-left {
+    width: 49%;
+    height: 512px;
+    flex-shrink: 0;
+    background-image: url("./image/second2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {
+      color: var(--text-white-50, rgba(255, 255, 255, 0.50));
+
+      /* Text_Gray */
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    h4 {
+      color: var(--Text_White, #FFF);
+
+      /* H4 */
+      font-family: "DM Serif Display";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 133.333% */
+    }
+  }
+
+  &-right {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49%;
+    height: 512px;
+    flex-shrink: 0;
+    background-image: url("./image/download\ \(4\).svg");
+
+    p {
+      color: var(--text-white-50, rgba(255, 255, 255, 0.50));
+
+      /* Text_Gray */
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    h4 {
+      color: var(--Text_White, #FFF);
+
+      /* H4 */
+      font-family: "DM Serif Display";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 133.333% */
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.yellow-outer {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.image {
+  width: 20px;
+  height: 60px;
+}
+
+.yellow-outer::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 480px;
+  z-index: -1;
+  background-color: #434ccc;
+}
+
+.left-logout img {
+  margin-left: -128px;
+}
+
+.orange {
+  height: 512px;
+  flex-shrink: 0;
+}
+
+.blue p {
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+
+.right-yellow img {
+  width: 100%;
+}
+
+.text-heading {
+  p {
+    margin: 0;
+    color: var(--text-white-50, rgba(255, 255, 255, 0.50));
+
+    /* Text_Gray */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  h2 {
+    margin-top: 21px;
+    margin-bottom: 36px;
+    color: var(--Text_White, #FFF);
+
+    /* H2 */
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 114.286% */
+  }
+
+  button {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    padding: 13px 43.5px 11px 43.5px;
+    background: transparent;
+    border: 1px solid white;
+  }
+}
+
+.yellow-inner {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.yellow {
+  background: #f1b505;
+}
+
+button {
+  margin-top: 34px;
+
+  p {
+    color: #434CCC;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+  }
+
+  border-radius: 5px;
+  border: 1px solid var(--Primary_1, #434CCC);
+}
+
+.right-logout {
+  h2 {
+    color: var(--Text_Black, #000);
+
+    /* H2 */
+    font-family: "DM Serif Display";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* 114.286% */
+  }
+}
+
+.right-logout-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 52px;
+
+  div {
+    img {
+    }
+
+    h4 {
+      margin-top: 32px;
+      color: var(--Text_Black, #000);
+      margin: 0;
+
+      /* H4 */
+      font-family: "DM Serif Display";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 133.333% */
+    }
+
+    p {
+      color: var(--text-black-50, rgba(0, 0, 0, 0.50));
+      margin-top: 7px;
+
+      /* Text_Gray */
+      font-family: "DM Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
+}
+
+.right-logout-inner div {
+  width: 44%;
+  margin-left: 30px;
+}
+
+.right-logout {
+  p {
+    color: var(--Text_Black, #000);
+
+    /* Text_Big */
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+  }
+
+  margin-left: 180px;
+  width: 40%;
+}
+
+.left-logout {
+  width: 40%;
+}
+
+.left-yellow {
+  width: 40%;
+}
+
+.right-logout-inner div {
+  width: 43%;
+  margin-left: 30px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.right-yellow {
+  width: 60%;
+}
+
+.button {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 34px;
+
+  padding: 13px 50.5px 11px 49.5px;
+
+  p {
+    margin: 0;
+    color: #434ccc;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.yellow-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+/*@media all and (min-width:768px){
+    .container{
+        width: 1170px;
+
+flex-shrink: 0;
+margin-right: auto;
+margin-left: auto;
+    }
+}*/
+@media all and (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /*.left-yellow{
+    position: absolute;
+    width: 100%;
+  }*/
+  .text-heading {
+    width: 100%;
+    padding-left: 44px;
+    padding-right: 66px;
+  }
+  .blue p {
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .yellow-inner {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+  .text-heading h2 {
+    color: var(--Text_White, #FFF);
+    margin-top: 3px;
+    /* H3 */
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 120% */
+
+    button {
+      margin-top: 22px;
+    }
+  }
+  .left-yellow {
+    width: 100%;
+    position: absolute;
+  }
+  .right-yellow {
+    width: 100%;
+  }
+  .orange {
+    display: flex;
+    /* width: 80%; */
+    gap: 0;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+  .yellow-outer::before {
+    height: 338px;
+  }
+  .content {
+    margin-top: 58px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .logout-inner {
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .left-logout {
+    width: 100%;
+  }
+  .left-logout img {
+    margin-left: 0;
+    width: 100%;
+  }
+  .right-logout {
+    margin-left: 0;
+    width: 100%;
+  }
+  .orange-left {
+    width: 100%;
+    background-position: center;
+  }
+  .content {
+    font-size: 24px;
+  }
+  .orange-right {
+    width: 100%;
+    background-position: center;
+  }
+  .orange {
+    height: auto;
+  }
+}
+
 //  .....harshal.....
  
 .box1{
