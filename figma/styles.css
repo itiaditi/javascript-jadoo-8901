@@ -690,42 +690,43 @@ margin-left: auto;
 }
 
 body {
+  padding: 0;
   margin: 0;
   padding: 0;
 }
 
-.mainbox {
+.box1 {
   width: 1440px;
+  height: 64px;
+  border: 2px solid black;
+  background-color: #434ccc;
+  border: none;
 }
-.mainbox > div:nth-child(1) {
-  background-color: #434CCC;
-  height: 768px;
-}
-.mainbox > div:nth-child(1) .logosubbox {
+.box1 .logoandcontent {
   width: 1170px;
   height: 48px;
   border: 2px solid black;
   margin-left: 135px;
-  margin-right: 135px;
   margin-top: 16px;
   display: flex;
-  position: relative;
   border: none;
 }
-.mainbox > div:nth-child(1) .logosubbox .subbox1 {
+.box1 .logoandcontent .logo {
   width: 102px;
   height: 48px;
   border: 2px solid black;
-  text-align: center;
+  color: var(--Text_White, #FFF);
+  /* H3 */
   font-family: "DM Serif Display";
-  font-size: 39px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  color: white;
+  border: none;
+  border: none;
   border: none;
 }
-.mainbox > div:nth-child(1) .logosubbox .subbox2 {
+.box1 .logoandcontent .aboutsection {
   width: 324px;
   height: 24px;
   border: 2px solid black;
@@ -735,12 +736,12 @@ body {
   text-align: left;
   border: none;
 }
-.mainbox > div:nth-child(1) .logosubbox .subbox2 ul {
+.box1 .logoandcontent .aboutsection ul {
   display: flex;
   justify-content: space-around;
   margin: 0px;
 }
-.mainbox > div:nth-child(1) .logosubbox .subbox2 ul li {
+.box1 .logoandcontent .aboutsection ul li {
   color: white;
   list-style: none;
   text-align: right;
@@ -750,38 +751,38 @@ body {
   font-weight: 700;
   line-height: 24px;
 }
-.mainbox > div:nth-child(1) .logosubbox .button {
+.box1 .logoandcontent .button {
   width: 170px;
   height: 48px;
-  border: 1px solid white;
   margin-left: 40px;
-  background-color: #434CCC;
-  margin-top: 12px;
-  border-radius: 5%;
-  text-align: center;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
+  background-color: #434ccc;
   color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  border-radius: 5%;
+  margin-top: 16px;
 }
-.mainbox > div:nth-child(1) .picandduo {
-  width: 100%;
-  height: 714px;
+
+.box2 {
+  width: 1440px;
+  height: 704px;
   border: 2px solid black;
+  background-color: #434ccc;
   display: flex;
   border: none;
 }
-.mainbox > div:nth-child(1) .picandduo .content {
-  height: 401px;
-  width: 50%;
-  border: 2px solid red;
-  margin-left: 137px;
-  margin-top: 127px;
+.box2 .duosection {
+  height: 507px;
+  width: 515px;
+  border: 2px solid black;
+  margin-left: 135px;
+  margin-top: 111px;
   border: none;
 }
-.mainbox > div:nth-child(1) .picandduo .content .p1 {
+.box2 .duosection .exp {
+  width: 126px;
+  height: 24px;
+  border: 2px solid black;
   color: var(--Text_White, #FFF);
   /* H5 */
   font-family: "DM Sans";
@@ -791,9 +792,13 @@ body {
   line-height: 24px; /* 150% */
   letter-spacing: 4.8px;
   text-transform: uppercase;
+  border: none;
 }
-.mainbox > div:nth-child(1) .picandduo .content h1 {
-  white-space: pre;
+.box2 .duosection .duo {
+  width: 515px;
+  height: 160px;
+  border: 2px solid black;
+  margin-top: 24px;
   color: var(--Text_White, #FFF);
   /* H1 */
   font-family: "DM Serif Display";
@@ -801,9 +806,13 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 80px;
-  margin-top: 24px;
+  border: none;
 }
-.mainbox > div:nth-child(1) .picandduo .content .p2 {
+.box2 .duosection .para1 {
+  width: 370px;
+  height: 72px;
+  border: 2px solid black;
+  margin-top: 32px;
   color: var(--Text_White, #FFF);
   /* Text */
   font-family: "DM Sans";
@@ -811,15 +820,29 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 32px;
+  border: none;
 }
-.mainbox > div:nth-child(1) .picandduo .content button {
+.box2 .duosection .explore {
   width: 170px;
   height: 48px;
+  margin-top: 41px;
+  color: white;
+  background-color: #f1b505;
   background-color: #f1b505;
   color: white;
 }
-.mainbox > div:nth-child(1) .picandduo .image {
+.box2 .image {
+  width: 50%;
+  height: 580px;
+  border: 2px solid black;
+  margin-right: 120px;
+  margin-top: 120px;
+  margin-bottom: 500px;
+  background-color: #f1b505;
+  color: white;
+}
+
+.image {
   width: 50%;
   height: 580px;
   border: 2px solid black;
@@ -827,20 +850,26 @@ body {
   margin-top: 120px;
   margin-bottom: 500px;
   border: none;
+  border: none;
+  border: none;
 }
-.mainbox > div:nth-child(2) {
-  background-color: #FFDD78;
+
+img {
+  width: 900px;
+  margin-right: 100px;
+}
+
+.box3 {
+  width: 1440px;
   height: 768px;
-}
-.mainbox > div:nth-child(2) .vivendo {
-  width: 469px;
-  height: 64px;
   border: 2px solid black;
-  margin-top: 60px;
-  margin-left: 486px;
-  margin-right: 485px;
-  margin-bottom: 644px;
-  position: absolute;
+  background-color: #ffdd78;
+  border: none;
+}
+.box3 .vivendo {
+  width: 469px;
+  border: 2px solid black;
+  color: var(--Text_Black, #000);
   text-align: center;
   /* H2 */
   font-family: "DM Serif Display";
@@ -848,16 +877,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 64px;
+  margin-top: 60px;
+  margin-left: 485px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .para2 {
+.box3 .para2 {
   width: 570px;
-  height: 83px;
-  margin-top: 153px;
-  margin-bottom: 532px;
+  margin-top: 29px;
   margin-left: 435px;
   margin-right: 435px;
-  border: 2px solid black;
-  position: absolute;
   color: var(--Text_Black, #000);
   text-align: center;
   /* Text_Big */
@@ -867,7 +895,8 @@ body {
   font-weight: 400;
   line-height: 32px;
 }
-.mainbox > div:nth-child(2) .grid {
+
+.grid {
   width: 1170px;
   height: 416px;
   border: 2px solid black;
@@ -875,32 +904,33 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-left: 135px;
-  margin-top: 272px;
+  margin-top: 36px;
   margin-bottom: 80px;
   margin-right: 135px;
   position: absolute;
   border: none;
 }
-.mainbox > div:nth-child(2) .grid > div {
+.grid div {
   border: 2px solid black;
   background-color: white;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .icon1 {
+.grid .icon1 {
   margin-left: 119px;
   margin-right: 119px;
   margin-top: 64px;
 }
-.mainbox > div:nth-child(2) .grid .icon2 {
+.grid .icon2 {
   margin-left: 84px;
   margin-right: 100px;
   margin-top: 73px;
 }
-.mainbox > div:nth-child(2) .grid .icon3 {
+.grid .icon3 {
   margin-left: 121px;
   margin-right: 105px;
   margin-top: 58px;
 }
-.mainbox > div:nth-child(2) .grid .quidam {
+.grid .quidam {
   width: 162px;
   height: 32px;
   border: 2px solid black;
@@ -915,8 +945,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .para3quidam {
+.grid .para3quidam {
   width: 306px;
   height: 48px;
   border: 2px solid black;
@@ -931,8 +962,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .line {
+.grid .line {
   width: 338px;
   height: 1px;
   flex-shrink: 0;
@@ -942,7 +974,7 @@ body {
   margin-left: 32px;
   margin-bottom: 18px;
 }
-.mainbox > div:nth-child(2) .grid .mazim {
+.grid .mazim {
   width: 158px;
   height: 32px;
   border: 2px solid black;
@@ -957,8 +989,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .para3mazim {
+.grid .para3mazim {
   width: 306px;
   height: 48px;
   border: 2px solid black;
@@ -973,8 +1006,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .learnmore {
+.grid .learnmore {
   width: 101px;
   margin-top: 18px;
   margin-left: 32px;
@@ -987,7 +1021,7 @@ body {
   font-weight: 700;
   line-height: 24px;
 }
-.mainbox > div:nth-child(2) .grid .idque {
+.grid .idque {
   width: 175px;
   border: 2px solid black;
   margin-left: 30px;
@@ -1001,8 +1035,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
+  border: none;
 }
-.mainbox > div:nth-child(2) .grid .para3idque {
+.grid .para3idque {
   width: 306px;
   border: 2px solid black;
   margin-left: 33px;
@@ -1017,141 +1052,63 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  border: none;
 }
-.mainbox > div:nth-child(3) {
-  height: 1328px;
+
+#hamburger {
+  display: none;
 }
-.mainbox > div:nth-child(3) .head3 {
-  width: 88px;
-  margin-top: 63px;
-  margin-left: 676px;
-  margin-right: 676px;
-  border: 2px solid black;
-  color: var(--Text_Black, #000);
-  text-align: center;
-  /* H5 */
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 4.8px;
-  text-transform: uppercase;
-}
-.mainbox > div:nth-child(3) .head31 {
-  width: 351px;
-  border: 2px solid black;
-  margin-left: 545px;
-  margin-left: 545px;
-  margin-top: 21px;
-  color: var(--Text_Black, #000);
-  text-align: center;
-  /* H2 */
-  font-family: "DM Serif Display";
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 64px;
-}
-.mainbox > div:nth-child(3) .para31 {
-  width: 570px;
-  margin-top: 29px;
-  margin-left: 435px;
-  margin-right: 435px;
-  color: var(--Text_Black, #000);
-  text-align: center;
-  /* Text_Big */
-  font-family: "DM Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-.mainbox > div:nth-child(3) .grid2 {
-  width: 1440px;
-  height: 1031px;
-  border: 2px solid black;
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-  position: absolute;
-}
-.mainbox > div:nth-child(3) .grid2 > div {
-  border: 2px solid black;
-}
-.mainbox > div:nth-child(3) .grid2 .pic1 {
-  width: 684px;
-  height: 456px;
-  border: 2px solid black;
-  margin-top: 13px;
-  margin-left: 135px;
-  background-image: url(https://s3-alpha-sig.figma.com/img/fefb/5e05/0bb7487c83e979e2a96a35da7f11d87b?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XbT1V~Qs6ckDhe8bEX-W6G-zsqzSUfyKciyKAmXZ5Q~WY1RhhzIlUAVYP5rgnw61sfpnBh8ZAbHZUuc8rz93sWJItCHg4Aim4qZXqCi69YMSWAJkFPfTMdUnVyuKVLE8uZlLezumpNswVY7YlsGI6W8bJaiKQPDLoH6Jo7s53pq-skXI3kJN4J6FnuWI5rJHPoACzgLfRqeU1Uc2e4q~-MQDoxY~hghwq5hOirjP15wPsPdI2B1nFMBQ3cuHhzGmTbQu4gvCqEGjW68qXCEbaKriuolZEG93W1-c-wMxC~USHXG~O0TRR1zbduXJBs3nEJ8Y3vyiW2k86zthKh9NrA__);
-  background-size: cover;
-}
-.mainbox > div:nth-child(3) .grid2 .dolorem {
-  width: 392px;
-  height: 96px;
-  border: 2px solid black;
-  margin-top: 121px;
-  margin-left: 235px;
-  color: var(--Text_Black, #000);
-  /* H3 */
-  font-family: "DM Serif Display";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
-}
-.mainbox > div:nth-child(3) .grid2 .pic1para {
-  width: 470px;
-  height: 75px;
-  margin-top: 37px;
-  margin-left: 235px;
-  color: var(--text-black-50, rgba(0, 0, 0, 0.5));
-  /* Text_Gray */
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.mainbox > div:nth-child(3) .grid2 .learnmore1 {
-  width: 88px;
-  margin-left: 235px;
-  margin-top: 37px;
-}
-.mainbox > div:nth-child(3) .grid2 .nemore {
-  width: 323px;
-  height: 96px;
-  margin-right: 382px;
-  margin-bottom: 37px;
-  margin-top: 97px;
-  margin-left: 0px;
-  border: 2px solid black;
-  color: var(--Text_Black, #000);
-  /* H3 */
-  font-family: "DM Serif Display";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48px;
-}
-.mainbox > div:nth-child(3) .grid2 .pic2para {
-  width: 470px;
-  height: 75px;
-  border: 2px solid black;
-  margin-top: 37px;
-  margin-right: 235px;
-  color: var(--text-black-50, rgba(0, 0, 0, 0.5));
-  /* Text_Gray */
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.mainbox > div:nth-child(3) .grid2 .learnmore2 {
-  width: 88px;
-  height: 24px;
-  margin-right: 617px;
-  margin-top: 37px;
+
+@media all and (max-width: 768px) {
+  #hamburger {
+    display: inline-block;
+    margin-left: 264px;
+    margin-top: 24px;
+    background-color: yellow;
+  }
+  .aboutsection, .button {
+    display: none;
+  }
+  .box1 {
+    width: 100%;
+  }
+  .box2 {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+  .box3 {
+    width: 100%;
+    height: auto;
+  }
+  .box3 .vivendo {
+    width: 100%;
+    margin: 0;
+  }
+  .box3 .duosection {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .box3 .para2 {
+    width: 100%;
+    margin: 0;
+  }
+  .box3 .grid {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdd78;
+    margin: 0;
+  }
+  .box3 .grid div {
+    margin-bottom: 15px;
+    width: 346px;
+    margin: 30px;
+  }
+  .box3 .grid .icon1, .box3 .grid .icon2, .box3 .grid .icon3 {
+    margin-left: 107px;
+    margin-right: 107px;
+    margin-top: 64px;
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */
