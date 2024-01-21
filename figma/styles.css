@@ -464,17 +464,23 @@ margin-left: auto;
     height: auto;
   }
 }
+.container2 {
+  width: 100%;
+}
+.container2 .mainbox {
+  gap: 12px;
+}
+
 .box1 {
   width: 1440px;
-  height: 456px;
-  flex-shrink: 0;
-  border: 1px solid;
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
   display: flex;
 }
 .box1 .item1 {
   width: 50%;
   text-align: left;
-  border: 1px solid rgb(3, 10, 3);
   background: #434CCC;
   display: grid;
   flex-direction: column;
@@ -520,19 +526,16 @@ margin-left: auto;
   border-radius: 10px;
   margin-bottom: 90px;
 }
-
-.item2 {
+.box1 .item2 {
   flex: 1;
   text-align: center;
-  border: 1px solid rgb(3, 10, 3);
   background: url(./image/figma\ logo.svg), lightgray 0px 0px/100% 100% no-repeat;
 }
 
 .box2 {
-  width: 1440px;
-  height: 1600px;
-  flex-shrink: 0;
-  border: 2px solid black;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
   background-color: rgb(245, 246, 252);
 }
 .box2 .mid-part {
@@ -540,12 +543,13 @@ margin-left: auto;
   justify-content: space-around;
 }
 .box2 h5 {
+  padding-top: 63px;
   color: var(--Text_Black, #000);
   text-align: center;
-  /* H5 */
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
+  margin-top: 0px;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 24px; /* 150% */
@@ -554,7 +558,6 @@ margin-left: auto;
 .box2 h2 {
   color: var(--Text_Black, #000);
   text-align: center;
-  /* H2 */
   font-family: "DM Serif Display";
   font-size: 56px;
   font-style: normal;
@@ -564,7 +567,6 @@ margin-left: auto;
 .box2 > p {
   color: var(--Text_Black, #000);
   text-align: center;
-  /* Text_Big */
   font-family: "DM Sans";
   font-size: 20px;
   font-style: normal;
@@ -572,24 +574,15 @@ margin-left: auto;
   line-height: 32px; /* 160% */
 }
 .box2 .gridcard {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  width: 370px;
-  height: 480px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  text-align: center;
-  justify-content: center;
   background: #FFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  padding: 13px;
 }
 .box2 .gridcard > har {
   margin: 50px;
 }
 .box2 .gridcard .card > img {
-  margin-top: 28px;
   width: 300px;
-  height: 300px;
   flex-shrink: 0;
   border-radius: 50%;
 }
@@ -597,7 +590,6 @@ margin-left: auto;
   text-align: left;
   width: 300px;
   color: var(--Text_Black, #000);
-  /* H4 */
   font-family: "DM Serif Display";
   font-size: 24px;
   font-style: normal;
@@ -620,55 +612,50 @@ margin-left: auto;
 }
 .box2 .gridcard .info > p {
   color: var(--text-black-50, rgba(0, 0, 0, 0.5));
-  /* Text_Gray */
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-
-.ending-part > p {
+.box2 .ending-part {
+  padding-bottom: 55px;
+  margin: 30px;
+}
+.box2 .ending-part > p {
   color: var(--Text_Black, #000);
   text-align: center;
-  /* Text_Big */
   font-family: "DM Sans";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 160% */
 }
-.ending-part .last-grid {
-  height: 300px;
-  width: auto;
-  -moz-column-gap: 22px;
-       column-gap: 22px;
+.box2 .ending-part .last-grid {
+  gap: 50px;
   display: grid;
-  gap: 100px;
   justify-content: center;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
 }
-.ending-part .last-grid > div {
+.box2 .ending-part .last-grid > div {
   height: 100px;
-  width: 300px;
   gap: 20px;
   border-radius: 5px;
   background: #FFF;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.ending-part .box {
+.box2 .ending-part .box {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px;
 }
-.ending-part .box > img {
-  width: 43px;
-  height: 49px;
+.box2 .ending-part .box > img {
+  width: 46px;
   flex-shrink: 0;
-  margin-top: -25px;
+  margin: 0px 9px 29px 9px;
 }
-.ending-part .box .subdiv > h4 {
+.box2 .ending-part .box .subdiv > h4 {
   color: var(--Text_Black, #000);
   font-family: "DM Serif Display";
   font-size: 24px;
@@ -676,12 +663,11 @@ margin-left: auto;
   font-weight: 400;
   line-height: 32px; /* 133.333% */
 }
-.ending-part .box p {
+.box2 .ending-part .box p {
   color: var(--text-black-50, rgba(0, 0, 0, 0.5));
   margin-top: -20px;
   height: 65px;
   flex-shrink: 0;
-  /* Text_Gray */
   font-family: "DM Sans";
   font-size: 16px;
   font-style: normal;
@@ -689,6 +675,57 @@ margin-left: auto;
   line-height: 24px;
 }
 
+@media only screen and (max-width: 768px) {
+  .section-three .box1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .section-three .box1 .item1 {
+    width: 100%;
+    text-align: left;
+  }
+  .section-three .box1 .item1 :nth-child(1),
+  .section-three .box1 .item1 :nth-child(2),
+  .section-three .box1 .item1 :nth-child(3) {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  .section-three .box1 .item1 button {
+    width: 170px;
+    height: 47px;
+    margin-bottom: 20px;
+    margin-left: 14px;
+    border-radius: 0;
+  }
+  .section-three .box2 {
+    width: 100%;
+    height: auto;
+  }
+  .section-three .box2 .mid-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .section-three .box2 h5,
+  .section-three .box2 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .section-three .box2 .ending-part .last-grid {
+    gap: 50px;
+    display: grid;
+    padding: 0 15px 0 14px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-three .box2 .ending-part .last-grid > div h4, .section-three .box2 .ending-part .last-grid > div p {
+    margin: 0;
+    padding: 0;
+  }
+}
 body {
   padding: 0;
   margin: 0;
