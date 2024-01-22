@@ -62,6 +62,15 @@ https://youtu.be/pckxe0KBYwA?si=2UIsFrQ98HnWyHiw
 
 # Figma Design Snapshot
 
+## Navbar 
+![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/150215019/a89e498a-c5e8-4e38-847f-7b4702b6bcff)
+
+## Middle Section
+![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/150215019/09f4a7d5-d919-4612-8148-b88ecf51d461)
+## Footer
+![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/150215019/632aa52a-79c4-4fe2-8ebe-c6e27d2fbbd4)
+
+
 
 
 
