@@ -2,7 +2,7 @@
 ## Reliance Digital  Clone
 https://65ade3de9fb39fdcb10c705e--stirring-starlight-16f55e.netlify.app/
 ## Figma
-
+https://chic-pithivier-3c1c72.netlify.app/
 # Team Members
 
 Aditi Dhiman
