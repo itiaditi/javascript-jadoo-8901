@@ -36,8 +36,11 @@ Figma
 Home Page (Landing page)
 
 # Website Video
- 
+https://youtu.be/pckxe0KBYwA?si=2UIsFrQ98HnWyHiw
+
+
 # Website snapshot
+# 1.Reliance World
 ## Header
 ![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/154405714/90b2b686-2512-4301-9ed1-182aa6608c32)
 
@@ -56,6 +59,10 @@ Home Page (Landing page)
 ## Footer
 ![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/154405714/8c2cd86a-43be-4453-b2f4-1f6bd522deff)
 ![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/154405714/6eea885d-2204-41a9-9738-52a51499289b)
+
+# Figma Design Snapshot
+
+
 
 
 
