@@ -1,8 +1,5 @@
 # Masai construct week project Unit 3
-## Reliance Digital  Clone
-https://65ade3de9fb39fdcb10c705e--stirring-starlight-16f55e.netlify.app/
-## Figma
-https://chic-pithivier-3c1c72.netlify.app/
+Hello and welcome to our WEB204 Construct Week Project! Over the span of five days, our team of five members worked collaboratively to craft this project, which consists of two distinct parts.
 # Team Members
 
 Aditi Dhiman
@@ -31,6 +28,25 @@ VS Code
 Github
 
 Figma
+## 
+
+## Part 1
+## Reliance World  Clone
+https://65ade3de9fb39fdcb10c705e--stirring-starlight-16f55e.netlify.app/
+
+## Description 
+ Reliance World is an Indian retail chain operated by Reliance Retail, a subsidiary of Reliance Industries Limited. Reliance World focuses on offering a wide range of electronic products and gadgets, including smartphones, laptops, home appliances, cameras, and other consumer electronics.
+
+The Reliance World website serves as an online platform where customers can browse through their product catalog, check specifications, compare prices, and make online purchases. It provides a convenient way for customers to explore and buy electronic goods from the comfort of their homes.
+## Features
+### Product Catalog:
+A comprehensive online catalog featuring a wide range of electronic products, including smartphones, laptops, home appliances, cameras, audio equipment, and more.
+
+### Product Details: 
+Detailed product pages with specifications, features, and pricing information to help customers make informed decisions.
+
+### Search and Filters: 
+A search functionality and filters to facilitate easy navigation through the product catalog based on categories, brands, and specifications.
 
 # Functionalities
 Home Page (Landing page)
@@ -60,6 +76,10 @@ https://youtu.be/pckxe0KBYwA?si=2UIsFrQ98HnWyHiw
 ![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/154405714/8c2cd86a-43be-4453-b2f4-1f6bd522deff)
 ![image](https://github.com/itiaditi/javascript-jadoo-8901/assets/154405714/6eea885d-2204-41a9-9738-52a51499289b)
 
+## Part 2
+# Figma
+https://chic-pithivier-3c1c72.netlify.app/
+Figma stands as a state-of-the-art design platform, revolutionizing the way teams craft, collaborate, and refine digital designs in real-time.
 # Figma Design Snapshot
 
 ## Navbar 
